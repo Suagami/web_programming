@@ -1,0 +1,21 @@
+@import url("header.css");
+@import url("main.css");
+@import url("card.css");
+@import url("footer.css");
+@import url("normalize.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  cursor: pointer;
+  border: none;
+}

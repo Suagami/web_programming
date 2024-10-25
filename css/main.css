@@ -1,0 +1,54 @@
+
+.explorer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 20px;
+
+}
+
+.explorer-text {
+    max-width: 603px;
+    margin-right: 60px;
+}
+
+
+.explorer-text h1 {
+    font-weight: 600;
+    font-size: 55px;
+    margin: 0px;
+}
+
+.explorer-text p {
+    font-size: 25px;
+    opacity: 0.5;
+    margin-bottom: 60px;
+    max-width: 519px;
+}
+
+.explore-world {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+button.explore-now {
+    color: white;
+    height: 91px;
+    width: 263px;
+    border-radius: 25px;
+    border-radius:27px;
+    font-size: 25px;
+}
+
+.explorer-image img {
+    width: 400px;
+    margin-left: 60px;
+}
