@@ -1,0 +1,31 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("normalize.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card {
+    width: 360px;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid #D7D9DB;
+}
+
+.card > div {
+    gap: 16px;
+    padding: 16px;
+}
+  
+img {
+    object-fit: cover;
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+}

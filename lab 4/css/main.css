@@ -1,0 +1,38 @@
+.card .content {
+    padding-bottom: 0px;
+}
+.content .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.content .message {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3c4042;
+    line-height: 1.5;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#partycommittee {
+    background-color: #FAE1B6;
+    color: #D65E13;
+}
+
+#christmas {
+    background-color: #C6CAF8;
+    color: #0012B0;
+}
