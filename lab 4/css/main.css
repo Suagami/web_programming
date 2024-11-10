@@ -1,13 +1,13 @@
-.card .content {
+.content {
     padding-bottom: 0px;
 }
-.content .title {
+.content__title {
     font-size: 20px;
     font-weight: 600;
     color: #333;
 }
 
-.content .message {
+.content__message {
     font-size: 16px;
     font-weight: 400;
     color: #3c4042;
@@ -20,7 +20,7 @@
     gap: 10px;
 }
 
-.tag {
+.tags__tag {
     padding: 4px 12px;
     border-radius: 50px;
     font-size: 14px;
