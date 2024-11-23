@@ -9,6 +9,7 @@ body {
     font-weight: 500;
     font-style: normal;
     background: #F6F6F6;
+    max-height: 1106px;
 }
 
 button {

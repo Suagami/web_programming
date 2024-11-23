@@ -1,0 +1,144 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-section {
+    width:50%;
+    background-image: url("../images/building.jpg"); 
+    background-size:cover;
+}
+/* .image-section img {
+    width: 100%;
+    object-fit: cover;
+
+} */
+
+a {
+    color: #7F56D9;
+    text-decoration: none;
+}
+.form-section {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 94px 102px;
+}
+
+.form-section__title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-section__title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #667085;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.form-section__form-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-section__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-section__form-group#services-form {
+    gap: 16px;
+}
+.form-section__form-group label {
+    color: #344054;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.form-section__input, .form-section__select, .form-section__textarea {
+    font-size: 16px;
+    font-weight: 400;
+    color: #667085;
+    padding: 12px 16px;
+    line-height: 24px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    resize: none;
+}
+
+.form-section__phone-input {
+    display: flex;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+}
+
+#message {
+    padding: 10px 14px;
+    height: 128px;
+}
+  
+.form-section__phone-input .form-section__select {
+    width: 71px;
+    border: none;
+    padding: 12px 12px 12px 16px;
+    color: #101828;
+}
+
+.form-section__phone-input input {
+    border: none;
+}
+
+.form-section__checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-section__submit-btn {
+    background: #7F56D9;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+input[type=checkbox] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+}
+
+input[type=checkbox]:before {
+	font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent !important;
+    background: #fff;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+input[type=checkbox]:checked:before {
+	color: black !important;
+}

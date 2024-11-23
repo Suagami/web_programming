@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 5, макет 1, вариант 8</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="image-section">
+            <!-- <img class="container__image" src="images/building.jpg" alt="Building Image"> -->
+        </div>
+        <div class="form-section">
+            <div class="form-section__title-section">
+                <div class="form-section__title">Let’s level up your brand, together</div>
+                <div class="subtitle">You can reach us anytime via <a href="mailto:hi@untitledui.com">hi@untitledui.com</a></div>
+            </div>
+            <div class="form-section__form-groups" id="name-form">
+                <div class="form-section__form-group">
+                    <label for="name">Name</label>
+                    <input class="form-section__input" type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-section__form-group" id="email-form">
+                    <label for="email">Email</label>
+                    <input class="form-section__input" type="email" id="email" placeholder="you@company.com" required>
+                </div>
+                <div class="form-section__form-group" id="phone-form">
+                    <label for="phone">Phone number</label>
+                    <div class="form-section__phone-input">
+                        <select class="form-section__select" id="country-code">
+                            <option value="US">US</option>
+                            <option value="RU">RU</option>
+                        </select>
+                        <input class="form-section__input" type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                    </div>
+                </div>
+                <div class="form-section__form-group" id="message-form">
+                    <label for="message">How can we help?</label>
+                    <textarea class="form-section__textarea" id="message" placeholder="Tell us a little about the project..." required></textarea>
+                </div>
+                <div class="form-section__form-group" id="services-form">
+                    <label>Services</label>
+                    <div class="form-section__checkbox-group">
+                        <label class="checkbox"><input type="checkbox" value="Website design"> Website design</label>
+                        <label class="checkbox"><input type="checkbox" value="Content creation"> Content creation</label>
+                        <label class="checkbox"><input type="checkbox" value="UX design"> UX design</label>
+                        <label class="checkbox"><input type="checkbox" value="Strategy"> Strategy & consulting</label>
+                        <label class="checkbox"><input type="checkbox" value="User research"> User research</label>
+                        <label class="checkbox"><input type="checkbox" value="Other"> Other</label>
+                    </div>
+                </div>
+                <button type="submit" class="form-section__submit-btn">Get started</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
