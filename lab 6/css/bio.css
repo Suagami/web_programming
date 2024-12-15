@@ -1,0 +1,203 @@
+.body {
+    background: #2B2B2B;
+    color: white; 
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.bio {
+    border-bottom: 1px solid #3B3B3B;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio__background-cover{
+    height: fit-content;
+    background: linear-gradient(180deg, rgba(151, 71, 255, 0) 21.88%, #9747FF 95.31%);
+}
+
+.bio__background-img{
+    position:relative;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.bio__avatar-container {
+    /* top | right | bottom | left */
+    margin: -70px auto 0 auto;
+}
+.bio__avatar {
+    border-radius: 20px;
+    border: 2px solid #2B2B2B; 
+    width: 120px;
+    height: 120px;
+}
+
+.bio__artist-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bio__artist-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.bio__artist-name {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 51px;
+}
+
+.bio__stats {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.bio__stat-value {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.bio__stat-label, .bio__description {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.bio__bio, .bio__web_links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bio__label {
+    color: #858584;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.bio__ctas-pc {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.bio__ctas-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bio__btn {
+    width: 186px;
+    height: 60px;
+    background-color: #A259FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bio__btn-text{
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#follow_btn {
+    background-color: #2B2B2B;
+    border: 2px solid #A259FF; 
+}
+
+.bio__btn:hover {
+    background-color: #bf8eff;
+}
+
+#follow_btn:hover {
+    background-color: #3B3B3B;
+    border: 2px solid #bf8eff; 
+}
+
+.bio__link-icons {
+    cursor: pointer;
+}
+
+/* pc */
+@media (min-width:1279px){
+    .bio__background-img{
+        height:320px;
+    }
+
+    .bio__artist-info { 
+        width: 1050px;
+        margin: 40px auto;
+    }
+
+    .bio__ctas-phone {
+        display: none;
+    }
+
+    .bio__avatar-container  {
+        width: 1050px;
+    }
+}
+
+/* phone */
+@media (max-width:1279px){
+    .header__nav-bar-pc{
+        display: none;
+    }
+    
+    .body{                      
+        width: 375px;
+        height: auto;   
+    }
+
+    .bio__artist-info-section {
+        margin: 30px;
+    }
+
+    .bio__background-img{
+        height: 250px;
+    }
+
+    .bio__stat-value {
+        font-size: 22px;
+    }
+
+    .bio__stat-label, .bio__description {
+        font-size: 16px;
+    }
+
+    .bio__label {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .bio__btn {
+        width: 100%;
+    }
+
+    .bio__ctas-pc {
+        display: none;
+    }
+
+    .bio__artist-name {
+        font-size: 28px;
+    }
+
+}
+
+

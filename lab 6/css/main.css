@@ -1,0 +1,188 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.main__tabs {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.main__tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 350px;
+    height: 60px;
+    gap: 16px;
+    color: #858584;
+}
+
+.main__tab:not(.active):hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.main__tab.active {
+    border-bottom: 2px solid #858584;
+    color: white;
+}
+
+.main__tab-name {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.main__tab-count {
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main__tab.active .main__tab-count {
+    background-color: #858584;
+}
+
+.main__cards-section-background {
+    width: 100%;
+    background-color: #3B3B3B;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #2B2B2B;
+}
+
+.main__cards-section {
+    margin: 80px 115px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B2B2B;
+    width: 330px;
+    height: 469px;
+    border-radius: 20px;
+}
+
+.main__card-image{
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+
+.main__nft-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 30px 25px 30px;
+}
+
+.main__artist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main__nft-name {
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main__nft-name:hover {
+    text-decoration: underline;
+}
+
+.main__artist {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.main__artist-avatar {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+.main__artist-username {
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main__artist-username:hover {
+    text-decoration: underline;
+}
+
+.main__additional-info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__additional-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.main__additional-info-label {
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 12px;
+    color: #858584;
+}
+
+.main__additional-info-cost {
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* phone */
+@media (max-width:1279px){
+    .main__tab {
+        width:105px;
+    }
+
+    .main__tab-name {
+        font-size: 16px;
+    }
+
+    .main__tab-count {
+        display: none;
+    }
+
+    .main__card + .main__card + .main__card + .main__card {
+        display: none;
+    }
+
+    .main__cards-section {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .main__additional-info-cost {
+        font-size: 12px;
+    }
+}

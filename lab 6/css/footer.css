@@ -1,0 +1,183 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #3B3B3B;
+}
+
+.footer__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #CCCCCC;
+}
+
+.footer__label {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+}
+
+.footer__marketplace {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.footer__logo {
+    width: 240px;
+}
+.footer__marketplace-description {
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__marketplace-join {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__explore {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__block-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__join {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__join-input-field {
+    border-radius: 20px;
+    height: 60px;
+    padding: 0px 0px 0px 20px;
+    border: none;
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__join-button {
+    border: none;
+    height: 60px;
+    border-radius: 20px;
+    background: #A259FF;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer__explore-item, .footer__marketplace-join-button {
+    cursor: pointer;
+}
+
+.footer__explore-item:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    border-top: 1px solid #858584;
+    background-color: #3B3B3B;
+    color: #858584;
+    height: 33px;
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 13.2px;
+    margin-bottom: 40px;
+}
+
+/* pc */
+@media (min-width:1279px){
+    .footer__subscribe-icon {
+        display: none;
+    }
+    .footer__copyright {
+        width: 1050px;
+    }
+    .footer__join-button {
+        width: 179px;
+        margin-left: -179px;
+    }
+    .footer__join-input-field {
+        width: 400px;
+    }
+
+    .footer__join-input {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+    }
+}
+
+/* phone */
+@media (max-width:1279px){
+    .footer__main {
+        flex-direction: column;
+        width: 315px;
+        gap: 30px;
+    }
+
+    .footer__marketplace{
+        gap: 20px;
+    }
+
+    .footer__explore {
+        gap: 20px;
+    }
+
+    .footer__join {
+        width: 315px;
+    }
+
+    .footer__join-input {
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer__join-input-field {
+        height: 46px;
+    }
+
+    .footer__join-button {
+        height: 46px;
+        gap: 12px;
+    }
+
+    .footer__copyright {
+        width: 315px;
+    }
+}
